@@ -36,7 +36,6 @@ try {
         console.log(
           `Register Cron job: ${subject.name} at ${subject.time} on ${key}`
         );
-        console.table(subject);
         cron.schedule(subject.cron, () => {
           sendMessage(`${subject.time} ${subject.name}`, subject.name);
         });
