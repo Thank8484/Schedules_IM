@@ -32,9 +32,6 @@ try {
   for (const key in cronSubjects) {
     if (Object.prototype.hasOwnProperty.call(cronSubjects, key)) {
       const daySubjects = cronSubjects[key];
-      console.log(
-        `Register Cron job: ${subject.name} at ${subject.time} on ${key}`
-      );
       daySubjects.forEach((subject) => {
         cron.schedule(subject.cron, () => {
           sendMessage(`${subject.time} ${subject.name}`, subject.name);
