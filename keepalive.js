@@ -1,7 +1,7 @@
 var http = require("http");
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT;
 
 http.createServer(function (req, res) {
   res.write("I'm alive");
