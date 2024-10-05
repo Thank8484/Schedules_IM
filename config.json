@@ -1,5 +1,12 @@
 {
   "cronSubjects": {
+    "test": [
+      {
+        "cron": "* * * * *",
+        "name": "Bot is keep runing",
+        "time": "* * * * *"
+      }
+    ],
     "monday": [
       {
         "cron": "15 8 * * 1",
